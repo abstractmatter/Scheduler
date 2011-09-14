@@ -1,0 +1,91 @@
+
+.ui-scheduler{
+	width:100%;
+	background:white;
+	border-bottom:solid 1px;
+/*	border-right:solid 1px;
+	border-left:solid 1px;
+*/	position: relative;
+	-moz-user-select:none;
+	-webkit-user-select: none;
+}
+
+.ui-scheduler .container{
+	position:absolute;
+	left:20px;
+	right:0;
+	top:0;
+	height:100%;
+}
+.ui-scheduler .container .event{
+	left:3%;
+	width:97%;
+	font-size: 1em;
+	overflow:hidden;
+	position:absolute;
+	cursor:pointer;
+	z-index:100;
+	text-align:center;
+}
+
+.ui-scheduler .container .event h1{
+	padding-top:5px;
+	padding-left:2px;
+	padding-right:2px;
+	font-size: 1.2em;
+	font-weight:normal;
+}
+.ui-scheduler .background{
+	z-index:-1;
+	top:0;
+	bottom:0;
+	width:100%;
+	position:absolute;
+	overflow:hidden;
+	border-radius:7px;
+	opacity: 0.5;
+	background:#777;
+}
+
+.ui-scheduler .background.grey{
+	background:#777;
+}
+.ui-scheduler .background.green{
+	background:green;
+}
+.ui-scheduler .background.blue{
+	background:blue;
+}
+.ui-scheduler .background.red{
+	background:red;
+}
+.ui-scheduler .time-slot{
+	display:block;
+	width:100%;
+	height:14px;
+	border-top:solid 1px #DDDDDD;
+}
+.ui-scheduler .time-slot.separator{
+	border-top:solid 1px #999999;
+}
+.ui-scheduler .time-slot .label{
+	background:#F6F6F6;
+	background: -moz-linear-gradient(center top , #FEFEFE, #F6F6F6) repeat scroll 0 0 #F6F6F6;
+	background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, from(#F6F6F6), color-stop(0.2, #FEFEFE), color-stop(0.4, #FEFEFE), to(#F6F6F6));
+    font-size:1.0em; 
+	float:left;
+	width:15px;
+	height:57px;
+	padding-top:2px;
+	padding-right:2px;
+	border-right: 1px solid #999999;
+	text-align:right;
+}
+
+
+.ui-scheduler .container .event .ui-resizable-s {
+	background-image:url(resize.png);
+	background-repeat:no-repeat;
+	background-position:top center;
+	bottom:-2px;
+}
